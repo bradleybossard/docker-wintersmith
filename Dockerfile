@@ -11,3 +11,4 @@ RUN apt-get update
 
 RUN apt-get install --yes nodejs npm
 RUN npm install -g wintersmith 
+RUN ln -fs /usr/bin/nodejs /usr/local/bin/node
