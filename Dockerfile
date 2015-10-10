@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:14.04
 MAINTAINER Bradley Bossard <bradleybossard@gmail.com>
 
 # Build the image
@@ -9,5 +9,5 @@ MAINTAINER Bradley Bossard <bradleybossard@gmail.com>
 
 RUN apt-get update
 
-RUN sudo apt-get install -y nodejs-legacy npm
+RUN apt-get install --yes nodejs npm
 RUN npm install -g wintersmith 
